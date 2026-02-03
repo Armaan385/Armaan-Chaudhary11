@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Armaan Chaudhary | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#e5e7eb;
+    line-height:1.6;
+}
+
+/* ---------- ANIMATIONS ---------- */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ---------- HEADER ---------- */
+header{
+    padding:70px 20px;
+    text-align:center;
+    animation: fadeUp 1.2s ease;
+}
+
+header h1{
+    font-size:2.6rem;
+    color:#38bdf8;
+}
+
+header p{
+    margin-top:10px;
+    color:#cbd5f5;
+}
+
+/* ---------- SECTIONS ---------- */
+section{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+    animation: fadeUp 1s ease;
+}
+
+h2{
+    font-size:1.8rem;
+    margin-bottom:20px;
+    border-left:5px solid #38bdf8;
+    padding-left:10px;
+}
+
+/* ---------- CARDS ---------- */
+.card{
+    background:#020617;
+    padding:22px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(56,189,248,0.15);
+    transition: all 0.4s ease;
+    animation: fadeIn 1.2s ease;
+}
+
+.card:hover{
+    transform: translateY(-8px) scale(1.02);
+    box-shadow:0 20px 40px rgba(56,189,248,0.25);
+}
+
+ul{
+    list-style:none;
+}
+
+ul li{
+    margin-bottom:8px;
+}
+
+/* ---------- FOOTER ---------- */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    color:#94a3b8;
+    animation: fadeIn 2s ease;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:600px){
+    header h1{
+        font-size:2.1rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Armaan Chaudhary</h1>
+    <p>Engineering Student | Data Science Enthusiast</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am a B.Tech Data Science student with a strong interest in programming,
+            data analysis, and modern web technologies. I enjoy learning new tools
+            and building real-world projects.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="card">
+        <h3>Programming Languages</h3>
+        <ul>
+            <li>Python</li>
+            <li>C++</li>
+            <li>Java</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Web Skills</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Education</h2>
+    <div class="card">
+        <p><strong>Degree:</strong> B.Tech</p>
+        <p><strong>Specialization:</strong> Data Science</p>
+        <p><strong>University:</strong> Gautam Buddha University, Greater Noida</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Armaan Chaudhary | Animated Portfolio
+</footer>
+
+</body>
+</html>
